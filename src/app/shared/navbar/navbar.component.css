@@ -1,0 +1,6 @@
+nav a{
+  @apply px-3 py-1;
+}
+.nav-active{
+  @apply bg-violet-700 rounded-sm;
+}
