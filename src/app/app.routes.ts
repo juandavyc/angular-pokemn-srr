@@ -2,10 +2,15 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'pokemons',
+    path: 'pokemons/page/:page',
     data: { title: "Pokemons page SSR", showInNavbar: true },
     loadComponent: () => import('./pages/pokemons-page/pokemons-page.component'),
   },
+  // {
+  //   path: 'pokemons',
+  //   data: { title: "Pokemons page SSR", showInNavbar: true },
+  //   loadComponent: () => import('./pages/pokemons-page/pokemons-page.component'),
+  // },
   {
     path: 'pokemons/:id',
     data: { title: "Pokemon page SSR", showInNavbar: false },

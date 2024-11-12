@@ -1,11 +1,13 @@
-<div class="grid gap-4 grid-col-1 sm:grid-cols-3 md:grid-cols-3">
+<div class="grid gap-4 grid-col-1 sm:grid-cols-4 md:grid-cols-4">
 
 
   @for (pokemon of pokemonsList(); track pokemon.id) {
-    <pokemon-card [pokemon]="pokemon"></pokemon-card>
+  <pokemon-card [pokemon]="pokemon"></pokemon-card>
   }
-
+  @empty {
   <div class="col-span-5 text-white text-center">
     No hay Pokemons
   </div>
+  }
+
 </div>
