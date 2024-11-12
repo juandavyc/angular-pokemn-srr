@@ -1,4 +1,4 @@
-<nav class="top-0 absolute gap-4 z- w-full flex justify-end px-2 py-3 bg-stone-900 text-white shadow-sm">
+<nav class="top-0 absolute gap-4 z- w-full flex justify-end px-2 py-3 bg-slate-800 text-white shadow-sm">
   @for (route of navigationRoutes; track $index) {
     <a [routerLink]="[route.path]"
     routerLinkActive="nav-active">{{route.data?.['title']}}</a>

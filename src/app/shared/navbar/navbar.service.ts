@@ -9,9 +9,6 @@ export class NavbarService {
   private router = inject(Router);
 
   constructor() {
-
-
-
   }
 
   getNavigationRoutes(): Route[] {

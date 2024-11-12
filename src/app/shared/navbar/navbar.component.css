@@ -2,5 +2,5 @@ nav a{
   @apply px-3 py-1;
 }
 .nav-active{
-  @apply bg-violet-700 rounded-sm;
+  @apply bg-cyan-900 rounded-sm text-blue-300;
 }
